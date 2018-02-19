@@ -39,10 +39,8 @@ final class LoggedOutCAViewController: UIViewController, LoggedOutCAPresentable,
     override func viewDidLoad() {
         print("loaded CA")
         buildUI()
-        let email = emailTxtField.text!
-        let password = pwdTestField.text!
         signInButton.rx.tap.subscribe(onNext: { [weak self] in
-            self?.listener?.startGRSSignIn(with: email, password: password)
+            self?.listener?.startGRSSignIn(with: (self?.emailTxtField.text)!, password: (self?.pwdTestField.text)!)
         })
             .disposed(by: disposeBag)
     }
@@ -60,6 +58,39 @@ final class LoggedOutCAViewController: UIViewController, LoggedOutCAPresentable,
         listener?.startGRSSignIn(with: emailTxtField.text!, password: pwdTestField.text!)
     }
     private let disposeBag = DisposeBag()
+    
+    func replaceModal(viewController: UIViewController?)
+        {
+            targetViewController = viewController
+        
+        guard !animationInProgress else {
+            return
+        }
+        
+        if presentedViewController != nil {
+            animationInProgress = true
+            dismiss(animated: true) { [weak self] in
+                if self?.targetViewController != nil {
+                    self?.presentTargetViewController()
+                } else {
+                    self?.animationInProgress = false
+                }
+            }
+        } else {
+            presentTargetViewController()
+        }
+    }
+    private var targetViewController: UIViewController?
+    private var animationInProgress = false
+    
+    private func presentTargetViewController() {
+        if let targetViewController = targetViewController {
+            animationInProgress = true
+            present(targetViewController, animated: false) { [weak self] in
+                self?.animationInProgress = false
+            }
+        }
+    }
 }
 
 

@@ -28,11 +28,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/Root/RootRouter.swift"
-            timestampString = "540719722.016845"
+            timestampString = "540758567.509596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
-            endingLineNumber = "63">
+            endingLineNumber = "63"
+            landmarkName = "routeToLoggedOut(withLocale:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,7 +44,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
-            timestampString = "540672751.019158"
+            timestampString = "540758567.509734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -58,7 +60,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
-            timestampString = "540672751.019962"
+            timestampString = "540758567.5104001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -74,13 +76,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
-            timestampString = "540672751.020375"
+            timestampString = "540758567.5108351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "initiateLogin(with:password:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RIBsFrameworkPOC.LoggedOutCAInteractor.(initiateLogin in _7E7A7689F7D4CF5F2EAD58DC4A2D0DC8)(with: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RIBsFrameworkPOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/InfyDev/Desktop/RIBsFrameworkPOC/RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
+                  timestampString = "540758379.566835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2449">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.URLSessionDataTask, Swift.Optional&lt;Any&gt;) -&gt; () in RIBsFrameworkPOC.LoggedOutCAInteractor.(initiateLogin in _7E7A7689F7D4CF5F2EAD58DC4A2D0DC8)(with: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RIBsFrameworkPOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/InfyDev/Desktop/RIBsFrameworkPOC/RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
+                  timestampString = "540758379.569077"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "1499">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__ObjC.URLSessionDataTask&gt;, Swift.Error) -&gt; () in RIBsFrameworkPOC.LoggedOutCAInteractor.(initiateLogin in _7E7A7689F7D4CF5F2EAD58DC4A2D0DC8)(with: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RIBsFrameworkPOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/InfyDev/Desktop/RIBsFrameworkPOC/RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
+                  timestampString = "540758379.571256"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,11 +139,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/Home/ViewController.m"
-            timestampString = "540730468.946734"
+            timestampString = "540753219.854818"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "-prepareData"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,12 +155,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIBsFrameworkPOC/Home/ViewController.m"
-            timestampString = "540730516.856738"
+            timestampString = "540753219.854903"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "-hideUI:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAInteractor.swift"
+            timestampString = "540758567.5113389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "initiateLogin(with:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCARouter.swift"
+            timestampString = "540758567.511771"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "navigateToHomeScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RIBsFrameworkPOC/LoggedOutCA/LoggedOutCAViewController.swift"
+            timestampString = "540758567.5118541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "replaceModal(viewController:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

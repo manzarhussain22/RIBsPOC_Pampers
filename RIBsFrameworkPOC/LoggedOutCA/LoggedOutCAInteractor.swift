@@ -13,6 +13,7 @@ import AFNetworking
 
 protocol LoggedOutCARouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func navigateToHomeScreen()
 }
 
 protocol LoggedOutCAPresentable: Presentable {
@@ -66,12 +67,15 @@ final class LoggedOutCAInteractor: PresentableInteractor<LoggedOutCAPresentable>
         
         manager.requestSerializer = AFJSONRequestSerializer()
         manager.requestSerializer.setAuthorizationHeaderFieldWithUsername("aimia_pampers_de_de", password: "RH5x*mQ6dF6yc@WrEg8%")
-        manager.responseSerializer = AFHTTPResponseSerializer()
+        manager.responseSerializer = AFJSONResponseSerializer()
         
         manager.post(serviceKey, parameters: params, constructingBodyWith: nil, progress: nil, success: { (task:URLSessionDataTask, responseObject) -> Void in
             SVProgressHUD.dismiss()
             print(responseObject!)
-            
+            let response = responseObject as! Dictionary<String, AnyObject>
+            if((response["success"]) != nil){
+               self.router?.navigateToHomeScreen()
+            }
         }, failure: { (task:URLSessionDataTask?, Error) -> Void in
             SVProgressHUD.dismiss()
             print(Error)
